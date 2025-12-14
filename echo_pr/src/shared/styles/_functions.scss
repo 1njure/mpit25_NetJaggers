@@ -1,0 +1,40 @@
+
+// @function rem($pixels, $context: 16px) {
+//   @if (unitless($pixels)) {
+//     $pixels: $pixels * 1px;
+//   }
+//   @if (unitless($context)) {
+//     $context: $context * 1px;
+//   }
+//   @return calc($pixels / $context) * 1rem;
+// }
+
+// @function em($pixels, $context: 16px) {
+//   @if (unitless($pixels)) {
+//     $pixels: $pixels * 1px;
+//   }
+//   @if (unitless($context)) {
+//     $context: $context * 1px;
+//   }
+//   @return calc($pixels / $context) * 1em;
+// }
+
+// @function color($shade: 500, $opacity: 1) {
+//   @if $opacity == 1 {
+//     @return var(--color-#{$shade});
+//   } @else {
+//     @return rgba(var(--color-#{$shade}-rgb), $opacity);
+//   }
+// }
+
+// @function spacing($multiplier: 4) {
+//   @return calc(var(--spacing-unit) * #{$multiplier});
+// }
+
+// @function darken-color($color, $amount) {
+//   @return adjust-color($color, $lightness: -$amount);
+// }
+
+// @function lighten-color($color, $amount) {
+//   @return adjust-color($color, $lightness: $amount);
+// }

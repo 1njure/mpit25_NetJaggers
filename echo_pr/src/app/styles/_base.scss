@@ -1,0 +1,157 @@
+@use "variables";
+@use "../../shared/styles/mixins" as mixins;
+@use "fonts";
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  min-height: 100vh;
+}
+
+// ========== ТИПОГРАФИКА ==========
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-base);
+  font-weight: 700;
+  line-height: var(--line-height-tight);
+  color: var(--color-white);
+  margin-bottom: var(--spacing-4);
+}
+
+h1 {
+  font-size: var(--font-size-2xl);
+  margin-top: var(--spacing-8);
+  margin-bottom: var(--spacing-6);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+  margin-top: var(--spacing-6);
+  margin-bottom: var(--spacing-5);
+}
+
+h3 {
+  font-size: var(--font-size-lg);
+  margin-top: var(--spacing-5);
+  margin-bottom: var(--spacing-4);
+}
+
+p {
+  margin-bottom: var(--spacing-4);
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// ========== КОНТЕЙНЕР ==========
+  .container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    
+    &--fluid {
+      max-width: none;
+    }
+    
+    &--narrow {
+      max-width: 800px;
+    }
+  }
+
+// ========== УТИЛИТАРНЫЕ КЛАССЫ ==========
+
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: var(--spacing-2);
+}
+
+.gap-4 {
+  gap: var(--spacing-4);
+}
+
+.mb-4 {
+  margin-bottom: var(--spacing-4);
+}
+
+.mt-8 {
+  margin-top: var(--spacing-8);
+}
+
+// ========== КОМПОНЕНТЫ ==========
+
+// .btn {
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: center;
+//   gap: var(--spacing-2);
+//   padding: var(--spacing-3) var(--spacing-6);
+//   font-weight: 600;
+//   border-radius: var(--radius-md);
+//   transition: all var(--transition-base) var(--transition-timing);
+  
+//   &--primary {
+//     background-color: var(--color-primary);
+//     color: var(--color-white);
+    
+//     &:hover {
+//       background-color: var(--color-primary-hover);
+//       transform: translateY(-2px);
+//       box-shadow: var(--shadow-md);
+//     }
+//   }
+  
+//   &--secondary {
+//     background-color: transparent;
+//     color: var(--color-primary);
+//     border: 2px solid var(--color-primary);
+    
+//     &:hover {
+//       background-color: var(--color-primary);
+//       color: var(--color-white);
+//     }
+//   }
+// }
+
+// .card {
+//   background: var(--bg-secondary);
+//   border-radius: var(--radius-lg);
+//   padding: var(--spacing-6);
+//   border: 1px solid var(--border-color);
+//   transition: all var(--transition-base) var(--transition-timing);
+  
+//   &:hover {
+//     border-color: var(--border-color-hover);
+//     box-shadow: var(--shadow-md);
+//   }
+// }

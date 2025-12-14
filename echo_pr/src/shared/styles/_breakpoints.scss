@@ -1,0 +1,49 @@
+// ========== BREAKPOINT VARIABLES ==========
+@use "./mixins" as *;  
+
+:root {
+  --breakpoint-xs: 375px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--container-padding);
+  padding-left: var(--container-padding);
+  
+  @include respond-to('sm') {
+    max-width: 540px;
+  }
+  
+  @include respond-to('md') {
+    max-width: 720px;
+  }
+  
+  @include respond-to('lg') {
+    max-width: 960px;
+  }
+  
+  @include respond-to('xl') {
+    max-width: 1140px;
+  }
+  
+  @include respond-to('xxl') {
+    max-width: 1320px;
+  }
+  
+  &--fluid {
+    max-width: 100%;
+  }
+  
+  &--narrow {
+    @include respond-to('lg') {
+      max-width: 800px;
+    }
+  }
+}
